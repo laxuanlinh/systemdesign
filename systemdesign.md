@@ -72,3 +72,26 @@
 - We have implemented `CQRS pattern` when separate the read and write operations to user and `post database`.
 - We also use `materialized view patterns` to optimize the post query time and avoid complex SQL query to the `post database`
   ![Functionality](image_share_functionality.png "Functionality")
+
+## Non-functional requirements
+
+### Scalability
+- To increase the scalability of our services, we can have multiple instances of a service running with a load balancer/reverse proxy
+- For the database, we need to shard the data the stored them on multiple databases. 
+- We can use the `hash strategy` to equally distribute the data to multiple database instances. The hash key can be user ID which should be generated using a uniformed algo to make sure the data is equally distributed
+- If we get more data, we can add more shards.
+- We can do the same for the `document databases`
+- To separate the frontend and backend code, we add an API gateway
+  ![Scalability](image_sharing_non_functional.png "Scalability")
+### Availability
+- We already have multiple instances of services but we need to add replicas to the databases
+- We also need to host these servers in different locations to ensure the resilience/availability
+  ![Availability](image_sharing_availability.png "Availability")
+
+### Performance
+- For performance of the frontend, we can use a CDN to store HTML, JS, CSS files, and also images. The image compressing process can also be offloaded to the CDN
+- For backend performance, the redis database should hold collections of each user's most recent posts and when a user queries for timeline, we query a list of followers from the user database then fetch the posts from redis
+- The problem is some users have millions of followers so we need to categorize them as INFLUENCER.
+- Every time an influencer makes a post, instead of updating millions of followers timelines, we just update the special influencer's post map in redis.
+- The timeline service should fetch both regular and influencer users' posts based on a list of followees/influencers and merge them together.
+- Each post should have a timestamp so that the timeline service can merge them chronologically
