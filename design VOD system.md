@@ -42,6 +42,7 @@
 - CP over AP, cc always see the latest information about their videos or not at all
 
 ## Non-functional requirements for user
+
 ### Scalability
 - Hundreds of millions of users
 ### Availability
@@ -53,12 +54,14 @@
 - AP over CP, users can still see old videos, better than no videos at all
 
 ## System API design
+
 - Sequence diagram for content creators uploading videos
 	![Content creator upload](VOD_cc_upload.png "Content creator upload")
 - Sequence diagram for users to search and watch videos
 	![Users search and watch videos](watch_video_sequence.png "Users search and watch videos")
 
 ## System design
+
 - Each media file type is a container that contains a video stream, audio stream, subtitle and metadata, to support multiple formats, we have to support multiple containers
 - The algorithms to encode videos are called codec, most videos shot by camera are encoded by a lossless codec but this makes the file very huge
 - The first step to read a file format is to compress it into a lossly codec.
@@ -68,20 +71,33 @@
 - When a user starts streaming, the device downloads the manifest file and buffering the first 3 segments, it then analyze the time taken to download and decide whether to switch to a higher or lower resolution stream
 - Different devices have different protocol to stream, ex: Apple HLS, MPEG DASH...
 - We also need to use a DRM to prevent the stream from being hijacked and played on another platform. Only registered users can watch the encrypted stream on our platform.
+
 ### System design for content creators to upload videos
+
 - When `video service` send the original video to the `object store`, the store then sends a message through a message broker to trigger the `transcoding service`.
 - The `transcoding service` save the transcoded videos with different bit rates to its own `object store` and send a message to `packaging service`
 - The `packaging service` package the videos with DRM and stores them to the final `object store`
 - Upon completion, the `packaging service` sends a message to `notification service` to notify user and to `video data service` to update their metadata
 	![Upload video system design](upload_video_system_design.png "Upload video system design")
+
 ### System design for users to search and watch videos
+
 - The `video data service` sends a message to `search service` when a video is uploaded so that it can update its `search No SQL database`
 - When a user searches for a title, the API gateway calls the `search service` to get a list of videos.
 - The user's device then uses the URL to get the stream from the `object store`
 	![Search videos](search_video_system_design.png "Search videos")
-	
+- When a content creator upload a video, it has to go to the `video service` and then the `object store`, this could be expensive due to the size and amount of the videos.
+- We can solve this by using the `video service` to get a `presigned URL` and let the user to upload directly to the `object store`. 
+- The `presign URL` should have a very short time limit for security reasons
+- To improve the availability, we can add more replicas to user, video data and search database.
+- To improve the video processing availability, we can add more pipelines to parallelly process the videos if they're uploaded at the same time.
+- For data consistency, we can select a technology that allows consistency and partition tolerance over availability 
+	![Content creator availability](content_creator_availability.png "Content creator availability")
 
-
+- To improve users' performance and availability, we can increase the instances of `search service` and `search database`
+- We can also use CDN with push CDN model to improve the performance and availability for users
+- To improve the endurance, we can have a GLBS and multiple data centers
+	![User availability](user_availability.png "User availability")
 
 
 
