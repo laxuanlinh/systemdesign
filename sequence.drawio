@@ -1,0 +1,113 @@
+<mxfile host="app.diagrams.net" modified="2023-08-26T08:29:16.652Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="OgvA994dCVfgvDU26l3a" version="21.6.8" type="device">
+  <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
+    <mxGraphModel dx="711" dy="666" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PNox6Mp_I74gNw8-g8A--46" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="369.5" y="439.9971428571429" as="sourcePoint" />
+            <mxPoint x="99.92857142857144" y="439.9971428571429" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--47" value="Deliver message" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PNox6Mp_I74gNw8-g8A--46">
+          <mxGeometry x="0.2708" y="1" relative="1" as="geometry">
+            <mxPoint x="42" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-5" value="Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="320" y="40" width="100" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="utTdj1UosDu_W4fkK-_m-24" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="aM9ryv3xv72pqoxQDRHE-5" vertex="1">
+          <mxGeometry x="45" y="160" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--16" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="aM9ryv3xv72pqoxQDRHE-5">
+          <mxGeometry x="45" y="250" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--28" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="aM9ryv3xv72pqoxQDRHE-5">
+          <mxGeometry x="45" y="70" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--39" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;" edge="1" parent="aM9ryv3xv72pqoxQDRHE-5" source="PNox6Mp_I74gNw8-g8A--16" target="PNox6Mp_I74gNw8-g8A--16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--40" value="Store message" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PNox6Mp_I74gNw8-g8A--39">
+          <mxGeometry x="-0.2619" y="-1" relative="1" as="geometry">
+            <mxPoint x="46" y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--42" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="aM9ryv3xv72pqoxQDRHE-5">
+          <mxGeometry x="45" y="310" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--43" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;" edge="1" parent="aM9ryv3xv72pqoxQDRHE-5" source="PNox6Mp_I74gNw8-g8A--42" target="PNox6Mp_I74gNw8-g8A--42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--44" value="Look for online users" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PNox6Mp_I74gNw8-g8A--43">
+          <mxGeometry x="-0.0905" y="1" relative="1" as="geometry">
+            <mxPoint x="54" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--29" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="639.5" y="109.99571428571433" as="sourcePoint" />
+            <mxPoint x="369.92857142857133" y="109.99571428571433" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--30" value="Create&amp;nbsp; channel" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PNox6Mp_I74gNw8-g8A--29">
+          <mxGeometry x="0.1505" y="-1" relative="1" as="geometry">
+            <mxPoint x="15" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--37" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="639.5" y="289.9957142857143" as="sourcePoint" />
+            <mxPoint x="375" y="289.9957142857143" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--38" value="Send message" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PNox6Mp_I74gNw8-g8A--37">
+          <mxGeometry x="0.2244" y="1" relative="1" as="geometry">
+            <mxPoint x="32" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="utTdj1UosDu_W4fkK-_m-1" value="User B" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="590" y="40" width="100" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--33" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;curved=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="99.92857142857144" y="199.99571428571434" as="sourcePoint" />
+            <mxPoint x="369.5" y="199.99571428571434" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--34" value="Join channel" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PNox6Mp_I74gNw8-g8A--33">
+          <mxGeometry x="-0.0551" relative="1" as="geometry">
+            <mxPoint x="13" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--1" value="User B" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="50" y="40" width="100" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--31" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="375" y="160.00285714285712" as="sourcePoint" />
+            <mxPoint x="639.5" y="160.00285714285712" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--32" value="Channel ID, URL" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PNox6Mp_I74gNw8-g8A--31">
+          <mxGeometry x="-0.1593" y="1" relative="1" as="geometry">
+            <mxPoint x="14" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--35" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="365" y="239.99714285714288" as="sourcePoint" />
+            <mxPoint x="99.92857142857144" y="239.99714285714288" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PNox6Mp_I74gNw8-g8A--36" value="Confirmation" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PNox6Mp_I74gNw8-g8A--35">
+          <mxGeometry x="0.2627" y="1" relative="1" as="geometry">
+            <mxPoint x="42" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
